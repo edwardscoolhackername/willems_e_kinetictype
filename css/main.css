@@ -8,6 +8,40 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
 }
+.sitecontainer {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.topbox {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.titlebox {
+  margin-left: 90px;
+}
+
+.playbutton {
+  width: 30px;
+  height: 30px;
+  margin: 30px;
+  background-image: url(../images/button_play.png);
+}
+.playbutton:visited{
+  background-image: url(../images/button_clicked.png);
+}
+.titlelabel {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+.artistlabel {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10px;
+}
 
 .type { margin-top: 12px; }
 
@@ -22,3 +56,11 @@ body {
 }
 
 svg { width: 100%; }
+
+#blooddrop {
+  width: 20px;
+  height: 3px;
+  position: fixed;
+  top: 74px;
+  margin-left: 34px;
+}
