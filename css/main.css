@@ -1,122 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
+.hidden {
+  display: none;
 }
 
-.hidden { display: none; }
-
 body {
-  background-color: #fff;
-  color: black;
+  background-color: #000;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
 }
 
 .type { margin-top: 12px; }
 
-.typewrapper {
+.lyricsbox {
   width: 530px;
-  border: thin solid black;
+  border: thin solid #fff;
   margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 10px;
   overflow: hidden;
   position: relative;
 }
+
 svg { width: 100%; }
-
-#typelayout path { opacity: 0; }
-
-.textanimation { animation: fadewords 0.2s forwards; }
-
-#controls { text-align: center; }
-#controls button {
-  padding: 20px;
-  cursor: pointer;
-  margin-top: 1.5em;
-  border-radius: 1em;
-}
-
-#projectheader {
-  margin: 30px 0 10px;
-  font-size: 2em;
-}
-
-#projectheader, #subheader {
-  text-align: center;
-  font-weight: bold;
-}
-
-#tonyvector {
-  position: absolute;
-  top: 139px;
-  left: 255px;
-  height: 300px;
-  opacity: 0;
-  animation-delay: 2s;
-  /*Delay when the animation starts, show up at a specific time*/
-}
-
-#wanna { animation-delay: 0.25s; }
-#play { animation-delay: 0.3s; }
-#rough { animation-delay: 0.5s; }
-#ok { animation-delay: 1.5s; }
-#say { animation-delay: 2.7s;}
-#hello { animation-delay: 3s; }
-#to, #my { animation-delay: 3.6s; }
-#little { animation-delay: 4s; }
-#friend { animation-delay: 4.2s; }
-
-
-.gotonygo {
-  animation: zoomtony 2.5s forwards;
-}
-
-@keyframes zoomtony {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  80% {
-    transform: scale(1.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes fadewords {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-
-/* animation name - delay - direction - duration - loop or not */
-.containerturn {
-  animation: turncontainer 0.2s linear 0.5s forwards,
-  turnagain 0.3s linear 1s forwards,
-  resetcontainer 0.8s linear 4s forwards;
- }
-@keyframes turncontainer {
-  100% {
-    transform: rotate(-90deg) scale(1.5) translate(31%, -3%);
-  }
-}
-@keyframes turnagain {
-  0% {
-    transform: rotate(-90deg) scale(1.5) translate(31%, -3%);
-  }
-  100% {
-    transform: rotate(0deg) scale(1.2) translate(-16%, 11%);
-  }
-}
-@keyframes resetcontainer {
-  0% {
-    transform: rotate(0deg) scale(1.4) translate(-13%, 11%);
-  }
-  100% {
-    transform: scale(1) translate(0%, 0%);
-  }
-}
