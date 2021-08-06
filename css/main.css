@@ -60,7 +60,51 @@ svg { width: 100%; }
 #blooddrop {
   width: 20px;
   height: 3px;
-  position: fixed;
+  position: absolute;
   top: 74px;
   margin-left: 34px;
+}
+
+.drip {
+  animation: longdrip 50s forwards;
+}
+@keyframes longdrip {
+  0% {
+    width: 20px;
+    height: 3px;
+  }
+  100% {
+    width: 20px;
+    height: 900px;
+  }
+}
+
+#typelayout g { opacity: 0; }
+
+#hello { animation-delay: 1.2s; }
+#welcome { animation-delay: 1.8s; }
+#takeaseat { animation-delay: 2.45s; }
+#comfortable { animation-delay: 3.1s; }
+#relax { animation-delay: 3.7s; }
+#takeasec { animation-delay: 4.4s; }
+#bothering { animation-delay: 6.6s; }
+#well { animation-delay: 8.2s; }
+#beginning { animation-delay: 8.5s; }
+#growingup { animation-delay: 10s; }
+#relationship { animation-delay: 10.8s; }
+#fundamentals { animation-delay: 11.6s; }
+#existence { animation-delay: 12.55s; }
+#didyou { animation-delay: 13.5s; }
+#xenon { animation-delay: 13.7s; }
+#spilling { animation-delay: 14.6s; }
+#mandelbrot { animation-delay: 15.9s; }
+#and { animation-delay: 17.8s; }
+#claustrophilic { animation-delay: 18s; }
+#sevenknuckle { animation-delay: 19s; }
+#getalong { animation-delay: 20s; }
+
+.textanimation { animation: fadewords 0.1s forwards; }
+@keyframes fadewords {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
