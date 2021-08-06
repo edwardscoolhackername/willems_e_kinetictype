@@ -14,6 +14,8 @@
   function playaudiowill() {
     document.querySelector("#blooddrop").classList.add('drip');
     document.querySelectorAll('g').forEach(group => group.classList.add('textanimation'));
+    document.querySelector(".lyricsbox").classList.add('containerturn');
+    document.querySelector("#typelayout").classList.add('lyricsmove');
     music.play();
   }
 

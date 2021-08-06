@@ -21,6 +21,13 @@ body {
 .titlebox {
   margin-left: 90px;
 }
+.iguess {
+  position: absolute;
+  left: 1000px;
+  top: 600px;
+  opacity: 0;
+  animation: fadewords .2s linear 55.2s forwards;
+}
 
 .playbutton {
   width: 30px;
@@ -47,6 +54,7 @@ body {
 
 .lyricsbox {
   width: 530px;
+  height: 530px;
   border: thin solid #fff;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -75,7 +83,7 @@ svg { width: 100%; }
   }
   100% {
     width: 20px;
-    height: 900px;
+    height: 700px;
   }
 }
 
@@ -101,10 +109,151 @@ svg { width: 100%; }
 #and { animation-delay: 17.8s; }
 #claustrophilic { animation-delay: 18s; }
 #sevenknuckle { animation-delay: 19s; }
-#getalong { animation-delay: 20s; }
+#getalong { animation-delay: 20.7s; }
+#gideon { animation-delay: 21.5s; }
+#scifis { animation-delay: 23.7s; }
+#strdstrand { animation-delay: 24.2s; }
+#nerves { animation-delay: 25.8s; }
+#namibian { animation-delay: 28.8s; }
+#earspierced { animation-delay: 30s; }
+#phineas { animation-delay: 30.7s; }
+#didyoudie { animation-delay: 31.9s; }
+#thursday { animation-delay: 33.2s; }
+#tuesday { animation-delay: 34.2s; }
+#hope { animation-delay: 34.8s; }
+#assess { animation-delay: 35.6s; }
+#objective { animation-delay: 35.9s; }
+#subjective { animation-delay: 37.1s; }
+#expertise { animation-delay: 38s; }
+#transorbital { animation-delay: 41s; }
+#icepick { animation-delay: 41.6s; }
+#holistic { animation-delay: 42.6s; }
+#betteridea { animation-delay: 43.4s; }
+#aboutthebest { animation-delay: 44.3s; }
+#ideaspread { animation-delay: 45.5s; }
+#no { animation-delay: 47.5s; }
+#spreadlike { animation-delay: 47.7s; }
+#onceagain { animation-delay: 49.2s; }
+#holding { animation-delay: 50.2s; }
+#asitwere { animation-delay: 51s; }
+#firstmirror { animation-delay: 52s; }
+#uptoyour { animation-delay: 52.8s; }
+#secondmirror { animation-delay: 53.6s; }
+
 
 .textanimation { animation: fadewords 0.1s forwards; }
 @keyframes fadewords {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+.containerturn {
+  animation: tiltexistence 0.01s linear 12.6s forwards,
+  tiltslow 4s linear 13.7s forwards,
+  tiltand .3s linear 18s forwards,
+  tiltcaskets .3s linear 18.7s forwards,
+  tiltnerves 5.7s linear 19s forwards,
+  tiltdie 9s linear 25.8s forwards,
+  tiltmyhope 1s linear 34.8s forwards,
+  tiltassess 6.8s linear 35.8s forwards,
+  tiltholistic 7.8s linear 42.6s forwards,
+  tiltasitwere 1.5s linear 50s forwards,
+  tiltfirstmirror .4s linear 51.7s forwards,
+  tiltasitwere .4s linear 52.5s forwards,
+  tiltsecondmirror .4s linear 53.3s forwards;
+ }
+
+ @keyframes tiltexistence {
+   100% { transform: rotate(-8deg); }
+ }
+ @keyframes tiltslow {
+   100% { transform: rotate(-12deg); }
+ }
+ @keyframes tiltand {
+   100% { transform: rotate(-63deg); }
+ }
+ @keyframes tiltcaskets {
+   100% { transform: rotate(-140deg); }
+ }
+ @keyframes tiltnerves {
+  100% { transform: rotate(-170deg); }
+ }
+ @keyframes tiltdie {
+  100% { transform: rotate(-120deg); }
+ }
+  @keyframes tiltmyhope {
+    100% { transform: rotate(-70deg); }
+  }
+  @keyframes tiltassess {
+    100% { transform: rotate(-40deg); }
+  }
+    @keyframes tiltholistic {
+      100% { transform: rotate(-60deg); }
+  }
+  @keyframes tiltasitwere {
+    100% { transform: rotate(-90deg); }
+  }
+  @keyframes tiltfirstmirror {
+    100% { transform: rotate(0deg); }
+  }
+  @keyframes tiltsecondmirror {
+    100% { transform: rotate(0deg);
+    height: 600px;}
+  }
+
+
+.lyricsmove {
+  animation: scrolland 1.3s linear 17.7s forwards,
+  zoomcaskets 7s linear 19s forwards,
+  zoomnerves 5s linear 26s forwards,
+  scrolltraction 2s linear 32s forwards,
+  zoomassess 8s linear 35s forwards,
+  scrollidea .4s linear 43s forwards,
+  scrollno 3s linear 47.7s forwards,
+  endmirror .4s linear 53.3s forwards;
+}
+  @keyframes scrolland {
+    100% {
+      transform: translate(-20%, -50%) scale(1.2);
+    }
+  }
+  @keyframes zoomcaskets {
+    100% {
+      transform: translate(-40%, -65%)scale(1.8);
+    }
+  }
+  @keyframes zoomnerves {
+    100% {
+      transform: translate(-10%, -50%) scale(1.2);
+    }
+  }
+  @keyframes scrolltraction {
+    100% {
+      transform: translate(10%, -40%) scale(1.3);
+    }
+  }
+  @keyframes zoomassess {
+    100% {
+      transform: translate(20%, -80%) scale(2.5);
+    }
+  }
+  @keyframes scrollidea {
+    100% {
+      transform: translate(20%, -85%) scale(2);
+    }
+  }
+  @keyframes scrollno {
+    100% {
+      transform: translate(45%, -80%) scale(2);
+    }
+  }
+  @keyframes scrollholding {
+    100% {
+      transform: translate(50%, -80%) scale(2.6);
+    }
+  }
+  @keyframes endmirror {
+    100% {
+      transform: translate(0%, -15%) scale(.7);
+    }
+  }
